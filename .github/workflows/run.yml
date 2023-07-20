@@ -197,7 +197,7 @@ jobs:
           sha256sum geosite.db > geosite.db.sha256sum
           sha256sum rules.zip > rules.zip.sha256sum
 
-- name: Release and upload assets
+      - name: Release and upload assets
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
